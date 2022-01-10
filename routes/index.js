@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 const messages = [
   {
@@ -15,7 +15,7 @@ const messages = [
 ];
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { data: messages });
+  res.render('index', { title: 'message board' });
 });
 
 module.exports = router;
