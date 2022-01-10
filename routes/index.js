@@ -15,7 +15,7 @@ const messages = [
 ];
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'message board' });
+  res.render('index', { title: 'message board', messages });
 });
 
 module.exports = router;

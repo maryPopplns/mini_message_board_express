@@ -6,5 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= title %></title>
   </head>
-  <body></body>
+  <body>
+    <ul>
+      <% messages.forEach(function(message){ %> <%- include('message',
+      {message}); %> <% }); %>
+    </ul>
+  </body>
 </html>
