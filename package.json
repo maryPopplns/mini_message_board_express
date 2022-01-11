@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "serverstart": "DEBUG=mini-message-board-express:* npm run start",
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=mini-message-board-express:* npm run devstart",
     "git": "git add . && git commit && git push origin $(git rev-parse --abbrev-ref HEAD) && echo '\n' && echo $(tput setaf 2)'commited: ' $(tput setaf 1)$(date) && echo '\n'",
     "startdb": "brew services start mongodb-community@5.0 && mongosh",
     "stopdb": "brew services stop mongodb-community@5.0"
